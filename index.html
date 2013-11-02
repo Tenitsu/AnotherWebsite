@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=0.75" />
+		<title>Amy Hsuanwen Wang's Unity Portfolio</title> <!--Title-->
+		<link rel="stylesheet" type = "text/css" href="portfolio.css"/> <!-- calling on style sheet and tell it that it's css -->
+		<link rel="stylesheet" media="(max-width: 1024px)" type="text/css" href="portfolio_tablet.css" />  <!--Css for tablet-->
+		<link rel="stylesheet" media="(max-width: 750px)" type="text/css" href="portfolio_mobile.css" /> <!-- Css for mobile-->
+		<link rel="stylesheet" href="flexslider.css" type="text/css" media="screen" />
+		<!--Fonts-->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+		<!-- Modernizr -->
+		<script src="js/modernizr.js"></script>
+		<!--JQuery-->
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script type='text/javascript' src='js/jquery.min.js'></script>
+    	<script type='text/javascript' src='js/jquery.mobile.customized.min.js'></script>
+    	<script type='text/javascript' src='js/jquery.easing.1.3.js'></script> 
+		<!-- FlexSlider -->
+		<script src="jquery.flexslider.js"></script>
+
+		<script>
+			$(document).ready(function(){
+			  $("#contactme").click(function(){
+			    $("#contactinfo").slideToggle();
+			    $(this).toggleClass("down");
+			  });
+			});
+		</script>
+
+		<script type="text/javascript">
+		  $(function(){
+		    SyntaxHighlighter.all();
+		  });
+		  $(window).load(function(){
+		    $('.flexslider').flexslider({
+		      animation: "slide",
+		      start: function(slider){
+		        $('body').removeClass('loading');
+		      }
+		    });
+		  });
+		</script>
+
+	</head>
+	<body>
+		<header>
+			<div class="col gu6">
+				<img id="logo" src="img/Logo.png" />
+			</div>	
+			<div class="col gu6">
+				<nav>
+					<ul id="nav">
+						<li><a href="finalProject.php">Final Project</a></li>
+						<li><a >Unity Projects</a>
+							<ul>
+								<li><a href="assignment1.php">Assignment 1</a></li>
+								<li><a href="assignment2.php">Assignment 2</a></li>
+								<li><a href="assignment3.php">Assignment 3</a></li>
+								<li><a href="LearningOutcome.php">Learning Outcome</a></li>
+							</ul>
+						</li>
+						<li><a href="aboutMe.php">About me</a></li>
+						<li><a id="contactme" href="#" title="button">Contact</a></li>
+						<li><a href="index.html">Home</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="col gu6" id="contactinfo">
+				<h3><a href="mailto:AmyHsuanwenWang@gmail.com">Email: amy_wang_2@sfu.ca</a></h3>
+			</div>
+
+			<div class="col gu3">
+				<h1 id="welcome">Welcome to my Public Portfolio</h1>
+				<h3 id="deco">This portfolio is dedicated specifically to the Unity projects that I have done.</h3>
+			</div>
+		</header>
+
+		<div class="wrap">
+			<div class="col gu6" id="fullBack">
+				<div class="flexslider">
+			        <ul class="slides">
+			            <li><img src="http://dl.dropbox.com/u/24053034/Public%20Portfolio/Final%20Project/Background.jpg" /></li>
+			  	    	<li><img src="http://dl.dropbox.com/u/24053034/Public%20Portfolio/Final%20Project/Finding_Alice_6Scenes_Done_Joys%202013-03-26%2018-06-08-45.jpg" /></li>
+			  	    	<li><img src="http://dl.dropbox.com/u/24053034/Public%20Portfolio/Assignment1/bk1.png" /></li>
+			  	    	<li><img src="http://dl.dropbox.com/u/24053034/Public%20Portfolio/Assignment1/bk2.png" /></li>
+			  	    	<li><img src="http://dl.dropbox.com/u/24053034/Public%20Portfolio/Assignment2/3.jpg" /></li>
+			  	    	<li><img src="http://dl.dropbox.com/u/24053034/Public%20Portfolio/Assignment2/1.jpg" /></li>
+			  	    	<li><img src="http://dl.dropbox.com/u/24053034/Public%20Portfolio/Assignment3/1.jpg" /></li>
+			  	    	<li><img src="http://dl.dropbox.com/u/24053034/Public%20Portfolio/Assignment3/2.jpg" /></li>
+			  	    	<li><img src="http://dl.dropbox.com/u/24053034/Public%20Portfolio/Assignment3/3.jpg" /> </li>
+			        </ul>
+		        </div>
+			</div>
+		</div>
+		<footer>
+			<h6>&copy; Amy Hsuanwen Wang</h6>
+			<h6> website design/developed by Amy Hsuanwen Wang</h6>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,349 @@
+html{
+	font-size: 125%;
+	font-family: 'Open Sans', sans-serif;
+	height: 100%;
+	background-color: black;
+	min-width: 489px;
+}
+
+* {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+	font-weight:inherit;
+	font-style:inherit;
+	font-family:inherit;
+	color:inherit;
+	text-align:inherit;
+}
+
+body{
+
+}
+
+footer{
+	height: 10%;
+	width: 100%;
+	position: absolute;
+	z-index: 5;
+	bottom: 0px;
+	background-color: black;
+}
+
+header{
+	height: 133px;
+	width: 100%;
+	position: absolute;
+	z-index: 5;
+	top: 0px;
+	background-color: black;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	color: #51e0ff;
+}
+
+button{
+	background-color:rgba(0,0,0,0.0);
+	z-index: 100; 
+}
+
+h1{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 25px;
+	color: white;
+}
+
+h2{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	color: white;
+	margin-top: 2%;
+}
+
+h3{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	font-weight: 100;
+	color: white;
+}
+
+h6{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 9px;
+	font-weight: 100;
+	color: white;
+	line-height: 15px;
+}
+
+p{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 100;
+	color: white;
+}
+
+footer h6{
+	text-align: center;
+	bottom: 0px;
+}
+
+nav ul{
+	text-align: right;
+	margin-right: 1%;
+}
+
+nav li{
+	display: inline;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	font-size: 15px;
+	margin-right: 50px;
+}
+nav ul ul {
+	/*This hides the submenu initially*/
+	display: none;
+	background-color:rgba(87,95,106,0.6); border-radius: 0px; padding: 0;
+	position: absolute; top: 98%; /*This is where the hover menu box position can be changed*/
+	text-align: right;
+}
+	nav ul ul li {
+		float: none; 
+		/*border-top: 0.5px solid #6b727c;
+		border-bottom: 0.5px solid #575f6a;*/
+		position: relative;
+	}
+		nav ul ul li a {
+			text-align: left;
+			padding-left: 10px;
+			padding-right: 10px;
+			padding-bottom: 0px;
+			margin-bottom: 0px;
+			color: white;
+		}	
+			nav ul ul li a:hover {
+				background: white;
+			}
+
+nav ul ul ul {
+	position: absolute; right: 100%; top:0;
+}
+
+nav ul:after {
+	content: ""; clear: both; display: block;
+}
+
+nav ul li {
+	float: right;
+}
+nav ul li:hover {
+	/*background: #4b545f;
+	background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
+	background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+	background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);*/
+	color: #51e0ff;
+}
+	nav ul li:hover a {
+		color: #51e0ff;
+	}
+
+nav ul li a {
+	display: block; 
+	padding-top: 10px;
+	text-align: right;
+	text-decoration: none;
+}
+
+nav ul li:hover > ul {
+	/*This makes the block menu appear*/
+	display: block;
+}
+
+.class{
+
+}
+
+#top{
+	padding-top: 150px;
+}
+
+#contactinfo{
+	display: none;
+	text-align: right;
+	background-color:rgba(0,0,0,0.6);
+	color: white;
+	height: 30px;
+	padding-top: 15px;
+	z-index: 10;
+	border-bottom:2px solid grey;
+}
+
+#contactinfo h3 a{
+	margin-right: 6.5%;
+}
+
+.flexslider{
+	height: 50%;
+	position: relative;
+}
+
+.gu6{
+	width: 100%;
+}
+
+.gu4{
+	width: 35vw;
+	height: 100vh;
+	padding-left: 20px;
+	background-color:rgba(0,0,0,0.6);
+}
+
+.gu4 .info{
+	width: 45%;
+	padding-left: 20px;
+	background-color:rgba(0,0,0,0.6);
+}
+
+.gu3 {
+	width: 33%;
+	float: right;
+	position: relative;
+	margin-top: 55vh;
+	z-index: 3;
+	background-color: rgba(0,0,0,0.5);
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 5px;
+}
+
+.gu3_5{
+	width: 25%;
+	float: right;
+	position: relative;
+	z-index: 3;
+	margin-right: 3%;
+	/*border: 1px solid red;*/
+}
+
+.iconBorder{
+	border-top: 3px solid white;
+	border-bottom: 3px solid white;
+	border-left: 3px solid white;
+	border-right: 3px solid white;
+	border-radius: 3px;
+	box-shadow: 0px 3px 4px #000;
+	margin-right: 2%;
+
+}
+
+.indent{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.selectedIcon{
+	width: 100%;
+}
+
+.selectedIcon2{
+	width: 100%;
+	margin-top: 4%;
+	height: 9vh;
+}
+
+.more{
+
+}
+
+.topmargin{
+	margin-top: 10px;
+}
+
+#background{
+	position: absolute;
+	z-index: -10;
+	width: 100%;
+	height: 99vh;
+}
+
+#deco{
+	padding-left: 70px;
+	margin-right: 80px;
+}
+
+#welcome{
+	padding-left: 30px;
+}
+
+/*This is the info section for assignments*/
+#infomation{ 
+	position: relative;
+	float: right;
+	width: 40%;
+	margin-top: 50vh;
+	z-index: 3;
+	background-color: rgba(0,0,0,0.5);
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+
+}
+
+#infomation-longer{
+	position: relative;
+	float: right;
+	width: 40%;
+	margin-top: 50vh;
+	z-index: 3;
+	background-color: rgba(0,0,0,0.5);
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+}
+
+#infomation-longer2{
+	position: relative;
+	float: right;
+	width: 40%;
+	margin-top: 25vh;
+	z-index: 3;
+	background-color: rgba(0,0,0,0.5);
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+}
+
+/*Takes care of the gallery*/
+#imgGallery{
+	position: relative;
+	float: left;
+	margin-top: 40vh;
+	z-index: 3;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 2%;
+	background-color: transparent;
+}
+
+#imgGallery3{
+	position: relative;
+	float: left;
+	margin-top: 40vh;
+	z-index: 3;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 2%;
+}
+
+#logo{
+	width: 500px;
+	padding-left: 6px;
+	padding-top: 6px;
+}
